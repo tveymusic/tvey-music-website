@@ -35,14 +35,6 @@ document.documentElement.setAttribute('data-theme', 'dark')
           <i class="pi pi-instagram"></i>
           Instagram
         </a>
-        <router-link 
-          to="/fonts"
-          class="instagram-link"
-          style="text-decoration: none;"
-        >
-          <i class="pi pi-palette"></i>
-          Choose Font
-        </router-link>
       </div>
     </main>
   </div>
