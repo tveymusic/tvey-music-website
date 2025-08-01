@@ -43,10 +43,13 @@ document.documentElement.setAttribute('data-theme', 'dark')
 <style scoped>
 .landing-page {
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   position: relative;
   transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
 }
 
 .landing-page.dark {
@@ -88,6 +91,9 @@ document.documentElement.setAttribute('data-theme', 'dark')
   justify-content: center;
   text-align: center;
   padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .title {
@@ -101,6 +107,7 @@ document.documentElement.setAttribute('data-theme', 'dark')
 .links {
   display: flex;
   gap: 2rem;
+  justify-content: center;
 }
 
 .instagram-link {
@@ -136,6 +143,23 @@ document.documentElement.setAttribute('data-theme', 'dark')
   border-color: #9ca3af;
 }
 
+/* Desktop-specific styles */
+@media (min-width: 769px) {
+  .title {
+    font-size: 5rem;
+  }
+  
+  .main-content {
+    padding: 4rem 2rem;
+  }
+  
+  .instagram-link {
+    font-size: 1.2rem;
+    padding: 1.25rem 2.5rem;
+  }
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
   .title {
     font-size: 2.5rem;
@@ -148,6 +172,26 @@ document.documentElement.setAttribute('data-theme', 'dark')
   
   .main-content {
     padding: 1rem;
+  }
+  
+  .links {
+    gap: 1rem;
+  }
+  
+  .instagram-link {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .main-content {
+    padding: 0.5rem;
   }
 }
 </style>

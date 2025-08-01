@@ -15,14 +15,21 @@ import { RouterView } from 'vue-router'
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
   overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 #app {
   min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 </style>
