@@ -27,10 +27,43 @@ document.documentElement.setAttribute('data-theme', 'dark')
       <h1 class="title">tveymusic</h1>
       <div class="links">
         <a 
+          href="https://open.spotify.com/track/34v7lyqSqAbMkbMWZQiT8q?si=5c6733e33c814b25" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="social-link spotify-link"
+        >
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+          </svg>
+          Spotify
+        </a>
+        <a 
+          href="https://www.youtube.com/watch?v=duV-NJ9bfk8" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="social-link youtube-link"
+        >
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          YouTube
+        </a>
+        <a 
+          href="https://music.apple.com/us/album/this-is-where-ill-start-feat-will-brahm-single/1822375099?uo=4&app=music&at=1001lry3&ct=dashboard" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="social-link apple-link"
+        >
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.997 6.124c0-.738-.065-1.47-.24-2.19-.317-1.31-1.062-2.31-2.18-3.043C21.003.517 20.373.285 19.676.164c-.952-.166-1.915-.135-2.877-.157C16.64.007 16.481 0 16.32 0H7.68c-.161 0-.32.007-.479.007-.962.022-1.925-.009-2.877.157-.697.121-1.327.353-1.901.727C1.302 1.624.557 2.624.24 3.934.065 4.654 0 5.386 0 6.124v11.752c0 .738.065 1.47.24 2.19.317 1.31 1.062 2.31 2.18 3.043.574.374 1.204.606 1.901.727.952.166 1.915.135 2.877.157.159 0 .318.007.479.007h8.64c.161 0 .32-.007.479-.007.962-.022 1.925.009 2.877-.157.697-.121 1.327-.353 1.901-.727 1.118-.733 1.863-1.733 2.18-3.043.175-.72.24-1.452.24-2.19V6.124zM12 19.529c-3.833 0-6.931-3.1-6.931-6.93 0-3.832 3.098-6.932 6.931-6.932 3.832 0 6.932 3.1 6.932 6.932 0 3.83-3.1 6.93-6.932 6.93zm0-12.062c-2.832 0-5.13 2.298-5.13 5.132 0 2.832 2.298 5.13 5.13 5.13 2.834 0 5.132-2.298 5.132-5.13 0-2.834-2.298-5.132-5.132-5.132zm3.616-2.443c-.895 0-1.617-.724-1.617-1.618 0-.895.722-1.618 1.617-1.618.894 0 1.618.723 1.618 1.618 0 .894-.724 1.618-1.618 1.618z"/>
+          </svg>
+          Apple Music
+        </a>
+        <a 
           href="https://www.instagram.com/tvey.music" 
           target="_blank" 
           rel="noopener noreferrer"
-          class="instagram-link"
+          class="social-link instagram-link"
         >
           <i class="pi pi-instagram"></i>
           Instagram
@@ -107,41 +140,76 @@ document.documentElement.setAttribute('data-theme', 'dark')
 
 .links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.instagram-link {
+.social-link {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   text-decoration: none;
   border-radius: 8px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  color: inherit;
 }
 
-.dark .instagram-link {
+.social-link .icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
+
+.social-link i {
+  font-size: 1.2rem;
+}
+
+/* Dark mode base styling */
+.dark .social-link {
   color: #d1d5db;
   border-color: #374151;
 }
 
-.dark .instagram-link:hover {
+.dark .social-link:hover {
   background-color: #1f2937;
   border-color: #6b7280;
 }
 
-.light .instagram-link {
+/* Light mode base styling */
+.light .social-link {
   color: #374151;
   border-color: #d1d5db;
 }
 
-.light .instagram-link:hover {
+.light .social-link:hover {
   background-color: #f9fafb;
   border-color: #9ca3af;
+}
+
+/* Platform-specific hover colors */
+.spotify-link:hover {
+  border-color: #1db954 !important;
+  background-color: rgba(29, 185, 84, 0.1) !important;
+}
+
+.youtube-link:hover {
+  border-color: #ff0000 !important;
+  background-color: rgba(255, 0, 0, 0.1) !important;
+}
+
+.apple-link:hover {
+  border-color: #fa243c !important;
+  background-color: rgba(250, 36, 60, 0.1) !important;
+}
+
+.instagram-link:hover {
+  border-color: #e4405f !important;
+  background-color: rgba(228, 64, 95, 0.1) !important;
 }
 
 /* Desktop-specific styles */
@@ -154,9 +222,9 @@ document.documentElement.setAttribute('data-theme', 'dark')
     padding: 4rem 2rem;
   }
   
-  .instagram-link {
-    font-size: 1.2rem;
-    padding: 1.25rem 2.5rem;
+  .social-link {
+    font-size: 1.1rem;
+    padding: 1.1rem 2rem;
   }
 }
 
@@ -179,9 +247,9 @@ document.documentElement.setAttribute('data-theme', 'dark')
     gap: 1rem;
   }
   
-  .instagram-link {
-    padding: 0.875rem 1.5rem;
-    font-size: 1rem;
+  .social-link {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
   }
 }
 
